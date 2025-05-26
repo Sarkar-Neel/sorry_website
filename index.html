@@ -1,5 +1,3 @@
-<!-- Page 1: Sweet Welcome with Hearts and Kitten -->
-<!-- Save as index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +29,9 @@
     }
   </style>
 </head>
-<body class="bg-pink-50 flex flex-col items-center justify-center min-h-screen p-6 overflow-hidden">
-    <!-- Background Music -->
+<body class="bg-pink-50 flex flex-col items-center justify-center min-h-screen p-6 overflow-hidden text-center">
+
+  <!-- 🎵 Background Music -->
   <audio autoplay loop muted id="bg-audio">
     <source src="bensound-plain.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -42,20 +41,36 @@
       document.getElementById('bg-audio').muted = false;
     });
   </script>
+
+  <!-- 🐱 Apology Header -->
   <h1 class="text-5xl font-bold text-pink-600 mb-4 animate-bounce">Hey... 😢</h1>
+
+  <!-- 🐾 Kitten Image -->
   <img src="https://placekitten.com/300/300" class="rounded-xl shadow-lg mb-4" alt="Sorry Kitten" />
-  <p class="text-lg text-center text-gray-700 max-w-xl">
-    I know you're upset. Before anything else... I just wanted to say — I'm really, truly sorry. 😔💔
+
+  <!-- 💞 Sorry GIF -->
+  <img src="https://media.tenor.com/6ghn44gUJgUAAAAi/diekatzlei-katzlei.gif" 
+       alt="Sorry Sowwy Cat"
+       class="rounded-xl shadow-lg mb-4 w-64 h-auto" />
+
+  <!-- 💬 Message -->
+  <p class="text-lg text-gray-700 max-w-xl mb-6">
+    I know you're upset. Before anything else... I just wanted to say — I'm really, truly sorry. 😔💔<br>
+    I hope this little page brings a tiny smile. Please click below when you're ready 💗
   </p>
-  <button onclick="window.location.href='page2.html'" class="mt-8 px-6 py-2 bg-pink-500 text-white font-semibold rounded-full shadow hover:bg-pink-600 transition">
+
+  <!-- 👉 Next Button -->
+  <button onclick="window.location.href='page2.html'" 
+          class="mt-4 px-6 py-2 bg-pink-500 text-white font-semibold rounded-full shadow hover:bg-pink-600 transition">
     Next 👉
   </button>
 
-  <!-- Floating Hearts -->
+  <!-- ❤️ Floating Hearts -->
   <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
   <div class="heart" style="left: 30%; animation-delay: 1s;"></div>
   <div class="heart" style="left: 50%; animation-delay: 2s;"></div>
   <div class="heart" style="left: 70%; animation-delay: 3s;"></div>
   <div class="heart" style="left: 90%; animation-delay: 4s;"></div>
+
 </body>
 </html>
