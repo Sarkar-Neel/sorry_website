@@ -32,6 +32,16 @@
   </style>
 </head>
 <body class="bg-pink-50 flex flex-col items-center justify-center min-h-screen p-6 overflow-hidden">
+    <!-- Background Music -->
+  <audio autoplay loop muted id="bg-audio">
+    <source src="bensound-plain.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    window.addEventListener('click', () => {
+      document.getElementById('bg-audio').muted = false;
+    });
+  </script>
   <h1 class="text-5xl font-bold text-pink-600 mb-4 animate-bounce">Hey... 😢</h1>
   <img src="https://placekitten.com/300/300" class="rounded-xl shadow-lg mb-4" alt="Sorry Kitten" />
   <p class="text-lg text-center text-gray-700 max-w-xl">
